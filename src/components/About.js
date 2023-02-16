@@ -13,7 +13,7 @@ export default function About() {
               className='col-lg-6 d-flex flex-column justify-content-center'
               data-aos='fade-up'
               data-aos-delay='200'
-              data-aos-duration='1000'
+              data-aos-duration='1500'
             >
               <div className='content'>
                 <h2>About Seasoned Green</h2>

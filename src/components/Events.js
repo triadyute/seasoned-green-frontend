@@ -4,16 +4,48 @@ import event2 from '../assets/img/event-2.jpg';
 import event3 from '../assets/img/event-3.jpg';
 import event4 from '../assets/img/event-4.jpg';
 
+const events = [
+  {
+    eventTitle: 'Tampa Vegan Festival 2023',
+    eventImg: event1,
+    eventDate: 'Dec 3, 2023',
+    eventLocation: 'Tampa Town Center',
+  },
+  {
+    eventTitle: 'Fort Lauderdale Veg-Fest',
+    eventImg: event2,
+    eventDate: 'Feb 13, 2023',
+    eventLocation: 'Springfield, Ft. Lauderdale',
+  },
+  {
+    eventTitle: "Organic Farmer's Market",
+    eventImg: event3,
+    eventDate: 'Apr 19, 2023',
+    eventLocation: 'Miami High School',
+  },
+  {
+    eventTitle: 'Green Foods Expo',
+    eventImg: event4,
+    eventDate: 'Dec 25, 2023',
+    eventLocation: 'Tampa Bay Mall',
+  },
+];
+
 export default function Events() {
   return (
     <div>
       <div className='about-header'></div>
       <section id='team' className='events'>
-        <div className='container' data-aos='fade-up'>
+        <div className='container' data-aos='fade-up' data-aos-duration='1000'>
           <header className='events-section-header'>
             <h1>Upcoming Events</h1>
           </header>
-          <div className='events-description'>
+          <div
+            className='events-description'
+            data-aos='fade-up'
+            data-aos-delay='100'
+            data-aos-duration='1000'
+          >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem explicabo, sint excepturi quasi, eligendi maiores
@@ -22,150 +54,48 @@ export default function Events() {
             </p>
           </div>
           <div className='row gy-4'>
-            <div
-              className='col-lg-3 col-md-6 d-flex align-items-stretch'
-              data-aos='fade-up'
-              data-aos-delay='100'
-            >
-              <div className='member'>
-                <div className='member-img'>
-                  <img src={event1} className='img-fluid' alt='' />
-                  <div className='social'>
-                    <a href='/'>
-                      <i className='bi bi-twitter'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-facebook'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-instagram'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-linkedin'></i>
-                    </a>
+            {events.map((event) => (
+              <div
+                className='col-lg-3 col-md-6 d-flex align-items-stretch'
+                data-aos='fade-up'
+                data-aos-delay='100'
+                data-aos-duration='1000'
+              >
+                <div className='member'>
+                  <div className='member-img'>
+                    <img src={event.eventImg} className='img-fluid' alt='' />
+                    <div className='social'>
+                      <a href='/'>
+                        <i className='bi bi-twitter'></i>
+                      </a>
+                      <a href='/'>
+                        <i className='bi bi-facebook'></i>
+                      </a>
+                      <a href='/'>
+                        <i className='bi bi-instagram'></i>
+                      </a>
+                      <a href='/'>
+                        <i className='bi bi-linkedin'></i>
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className='member-info'>
-                  <h4>Tampa Vegan Festival 2023</h4>
-                  <span>Feb 22, 2020 </span>
-                  {' | '}
-                  <p className='event-location'>TAMPA TOWN CENTER</p>
-                  <div className='attendimg-btn'>
-                    <button>I'M GOING</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className='col-lg-3 col-md-6 d-flex align-items-stretch'
-              data-aos='fade-up'
-              data-aos-delay='200'
-            >
-              <div className='member'>
-                <div className='member-img'>
-                  <img src={event2} className='img-fluid' alt='' />
-                  <div className='social'>
-                    <a href='/'>
-                      <i className='bi bi-twitter'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-facebook'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-instagram'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-linkedin'></i>
-                    </a>
-                  </div>
-                </div>
-                <div className='member-info'>
-                  <h4>Fort Lauderdale Veg-Fest</h4>
-                  <span>Feb 22, 2020 </span>
-                  {' | '}
-                  <p className='event-location'>TAMPA TOWN CENTER</p>
-                  <div className='attendimg-btn'>
-                    <button>I'M GOING</button>
+                  <div className='member-info'>
+                    <h4>{event.eventTitle}</h4>
+                    <span>{event.eventDate}</span>
+                    {' | '}
+                    <p className='event-location'>{event.eventLocation}</p>
+                    <div className='attendimg-btn'>
+                      <button>I'M GOING</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div
-              className='col-lg-3 col-md-6 d-flex align-items-stretch'
-              data-aos='fade-up'
-              data-aos-delay='300'
-            >
-              <div className='member'>
-                <div className='member-img'>
-                  <img src={event3} className='img-fluid' alt='' />
-                  <div className='social'>
-                    <a href='/'>
-                      <i className='bi bi-twitter'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-facebook'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-instagram'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-linkedin'></i>
-                    </a>
-                  </div>
-                </div>
-                <div className='member-info'>
-                  <h4>Organic Farmer's Market</h4>
-                  <span>Feb 22, 2020 </span>
-                  {' | '}
-                  <p className='event-location'>TAMPA TOWN CENTER</p>
-                  <div className='attendimg-btn'>
-                    <button>I'M GOING</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className='col-lg-3 col-md-6 d-flex align-items-stretch'
-              data-aos='fade-up'
-              data-aos-delay='400'
-            >
-              <div className='member'>
-                <div className='member-img'>
-                  <img src={event4} className='img-fluid' alt='' />
-                  <div className='social'>
-                    <a href='/'>
-                      <i className='bi bi-twitter'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-facebook'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-instagram'></i>
-                    </a>
-                    <a href='/'>
-                      <i className='bi bi-linkedin'></i>
-                    </a>
-                  </div>
-                </div>
-                <div className='member-info'>
-                  <h4>Green Foods Expo</h4>
-                  <span>Feb 22, 2020 </span>
-                  {' | '}
-                  <p className='event-location'>TAMPA TOWN CENTER</p>
-                  <div className='attendimg-btn'>
-                    <button>I'M GOING</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
       <div className='event-form container'>
-        <form action=''>
+        <form action='' data-aos='fade-up' data-aos-duration='1000'>
           <div className='row'>
             <div className='col-lg-12'>
               <header className='events-booking-header'>

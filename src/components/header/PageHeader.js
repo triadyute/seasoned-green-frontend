@@ -7,7 +7,7 @@ export default function PageHeader() {
   const [navBackground, setNavBackground] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 80) {
       setNavBackground(true);
     } else {
       setNavBackground(false);

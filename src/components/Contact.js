@@ -6,12 +6,17 @@ export default function Contact() {
     <div>
       <div className='about-header'></div>
       <section id='contact' className='contact'>
-        <div className='container' data-aos='fade-up'>
+        <div className='container' data-aos='fade-up' data-aos-duration='1000'>
           <header className='contact-section-header'>
             <h1>Contact Us</h1>
           </header>
 
-          <div className='row gy-4'>
+          <div
+            className='row gy-4'
+            data-aos='fade-up'
+            data-aos-delay='100'
+            data-aos-duration='1000'
+          >
             <div className='col-lg-6'>
               <div className='row gy-4'>
                 <div className='col-md-6'>
@@ -61,7 +66,12 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className='col-lg-6'>
+            <div
+              className='col-lg-6'
+              data-aos='fade-up'
+              data-aos-delay='200'
+              data-aos-duration='1000'
+            >
               <form
                 action='forms/contact.php'
                 method='post'
