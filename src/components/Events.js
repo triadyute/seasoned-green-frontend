@@ -179,7 +179,7 @@ export default function Events() {
                 type='text'
                 name='name'
                 id=''
-                value='Name'
+                placeholder='Name'
                 className='event-form-field'
               />
             </div>
@@ -190,7 +190,7 @@ export default function Events() {
                 type='email'
                 name='email'
                 id=''
-                value='Email'
+                placeholder='Email'
                 className='event-form-field'
               />
             </div>
@@ -198,9 +198,9 @@ export default function Events() {
           <div className='row'>
             <div className='col-lg-6'>
               <input
-                type='text'
-                name='location'
-                value='Location'
+                type='tel'
+                name='phone'
+                placeholder='Phone #'
                 id=''
                 className='event-form-field'
               />
@@ -208,8 +208,8 @@ export default function Events() {
             <div className='col-lg-6'>
               <input
                 type='text'
-                name='attendees'
-                value='# of people'
+                name='location'
+                placeholder='Location'
                 id=''
                 className='event-form-field'
               />
@@ -236,7 +236,7 @@ export default function Events() {
               <input
                 type='text'
                 name='attendees'
-                value='# of people'
+                placeholder='# of people'
                 id=''
                 className='event-form-field'
               />
@@ -248,8 +248,9 @@ export default function Events() {
                 name=''
                 id=''
                 cols='30'
-                rows='4'
+                rows='5'
                 className='event-form-field'
+                placeholder='Type here'
               ></textarea>
             </div>
           </div>

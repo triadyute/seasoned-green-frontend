@@ -50,7 +50,7 @@ export default function Contact() {
                 <div className='col-md-6'>
                   <div className='info-box'>
                     <Clock className='icon' />
-                    <h3>Open Hours</h3>
+                    <h3>Opening Hours</h3>
                     <p>
                       Monday - Friday
                       <br />
