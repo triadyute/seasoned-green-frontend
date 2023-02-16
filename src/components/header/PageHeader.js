@@ -2,6 +2,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/seasoned_green_logo.png';
 import { useState } from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
 
 export default function PageHeader() {
   const [navBackground, setNavBackground] = useState(false);
@@ -26,31 +27,29 @@ export default function PageHeader() {
       <Navbar expand='lg' className='navbar'>
         <Container>
           <Navbar.Brand className='logo d-flex align-items-center'>
-            <Link to='/'>
-              <img src={logo} alt='' height='200' />
-            </Link>
+            <img src={logo} alt='' height='200' />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav' fixed='top'>
             <Nav className='ml-auto'>
-              <Link to='/' style={{ textDecoration: 'inherit' }}>
+              <LinkContainer to={'/'}>
                 <Nav.Link>Home</Nav.Link>
-              </Link>
-              <Link to='/about' style={{ textDecoration: 'inherit' }}>
-                <Nav.Link>About Us</Nav.Link>
-              </Link>
-              <Link to='/menu' style={{ textDecoration: 'none' }}>
-                <Nav.Link>Menu</Nav.Link>
-              </Link>
-              <Link to='/recipes' style={{ textDecoration: 'none' }}>
-                <Nav.Link>RECIPES</Nav.Link>
-              </Link>
-              <Link to='/events' style={{ textDecoration: 'none' }}>
-                <Nav.Link>EVENTS</Nav.Link>
-              </Link>
-              <Link to='/contact' style={{ textDecoration: 'none' }}>
-                <Nav.Link>CONTACT</Nav.Link>{' '}
-              </Link>
+              </LinkContainer>
+              <LinkContainer to={'/about'}>
+                <Nav.Link>About</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to={'/events'}>
+                <Nav.Link>Events</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to={'/menu'}>
+                <Nav.Link>Menus</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to={'/recipes'}>
+                <Nav.Link>Recipes</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to={'/contact'}>
+                <Nav.Link>Contact</Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>

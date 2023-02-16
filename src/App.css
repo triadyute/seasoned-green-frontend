@@ -1,6 +1,9 @@
 body {
   background-color: #000000;
 }
+.active {
+  color: #ffc107 !important;
+}
 @font-face {
   font-family: bebasNeueProRegular;
   src: url('./assets/fonts/bebasneuepro-regular.otf');
@@ -802,7 +805,7 @@ border: 0;
 }
 
 .contact .info-box .icon {
-  font-size: 38px;
+  font-size: 30px;
   line-height: 0;
   color: #ffc107;}
 
@@ -811,7 +814,7 @@ border: 0;
   font-size: 31px;
   color: #9ccc00;
   font-weight: 700;
-  margin: 20px 0 10px 0;
+  margin: 15px 0 0px 0;
 }
 
 .contact .info-box p {
