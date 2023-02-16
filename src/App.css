@@ -242,10 +242,9 @@ background-color: #ffc107;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #000000;
-  /* background-image: linear-gradient(0deg, black, transparent), url(./assets//img//hero-bg-2.png); */
-  /* background-position: bottom; */
-  ;
+  background-image: linear-gradient(0deg, black, transparent), url(./assets//img//hero-bg-3.jpg);
+  background-size: contain;
+  background-attachment: fixed;
 }
 .about-header {
   width: 100%;
@@ -254,9 +253,8 @@ background-color: #ffc107;
   /* background: url(./assets/img/veggie-bg-2.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  /* background: linear-gradient(180deg, #000000, #272727); */
-  /* border: solid red 1px; */
+  /* background-attachment: fixed; */
+  /* box-shadow: inset 0 0 20px #000000; */
 }
 
 .about-section-header {
@@ -272,6 +270,7 @@ background-color: #ffc107;
   padding: 40px;
   font-weight: 200;
   border-bottom: 2px solid #a4d500;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
 }
 
 .about h3 {
@@ -329,7 +328,11 @@ background-color: #ffc107;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(0deg, black, transparent), url(./assets//img//hero-bg-3.jpg);
+  background-attachment: fixed;
+  background-size: contain;
 }
+
 .recipes-description {
   text-align: center;
   color: #f0f0f0;
@@ -359,6 +362,7 @@ background-color: #ffc107;
   background-color: #111111;
   margin-bottom: 30px;
   border-bottom: 2px solid #a4d500;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
 }
 
 .recipes .post-box .post-img {
@@ -442,6 +446,9 @@ background-color: #ffc107;
 .menu {
   min-height: 93vh;
   padding-bottom: 40px;;
+  background-image: linear-gradient(0deg, black, transparent), url(./assets//img//hero-bg-3.jpg);
+  background-attachment: fixed;
+  background-size: contain;
 }
 .menu-section-header {
   margin: 50px 20px 30px 20px;
@@ -470,6 +477,7 @@ background-color: #ffc107;
   padding: 10px 30px 10px 5px;
   border-radius: 10px;
   border-bottom: #b1dd00 2px solid;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
 }
 .menu-item-price {
   position:absolute;
@@ -566,8 +574,10 @@ background-color: #ffc107;
 
 /* EVENTS */
 .events {
-  background: #000000;
   padding: 60px 0;
+  background-image: linear-gradient(0deg, black, transparent), url(./assets//img//hero-bg-3.jpg);
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 .events-description {
@@ -605,7 +615,7 @@ background-color: #ffc107;
   text-align: center;
   border-radius: 5px;
   background: #111111;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
   transition: 0.3s;
 }
 
@@ -709,6 +719,7 @@ background-color: #ffc107;
   align-items: center;
   justify-content: center;
   width: 100%;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
 }
 
 .event-form form {
@@ -774,8 +785,9 @@ border: 0;
   justify-content: center;
   align-items: center;
   background-color: #000000;
-  /* background-image: linear-gradient(0deg, black, transparent), url(./assets//img//hero-bg-2.png); */
-  /* background-position: bottom; */
+  background-image: linear-gradient(0deg, black, transparent), url(./assets//img//hero-bg-3.jpg);
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 .contact h1{
@@ -785,7 +797,8 @@ border: 0;
 .contact .info-box {
   color: #fff;
   background-color: #111111;
-  padding: 30px;
+  padding: 25px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
 }
 
 .contact .info-box .icon {
@@ -814,6 +827,7 @@ border: 0;
   padding: 30px;
   height: 100%;
   border-bottom: #9ccc00 2px solid;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
 }
 
 .contact .php-email-form .error-message {
