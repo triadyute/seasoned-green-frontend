@@ -47,8 +47,11 @@ export default function Events() {
                 </div>
                 <div className='member-info'>
                   <h4>Tampa Vegan Festival 2023</h4>
-                  <span>Feb 22, 2024</span>
-                  <p className='event-location'>TESTING</p>
+                  <span>Feb 22, 2020 </span>
+                  <p className='event-location'>TAMPA TOWN CENTER</p>
+                  <div className='attendimg-btn'>
+                    <button>I'M GOING</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,8 +81,11 @@ export default function Events() {
                 </div>
                 <div className='member-info'>
                   <h4>Fort Lauderdale Veg-Fest</h4>
-                  <span>March 13, 2023</span>
-                  <p className='event-location'>TESTING</p>
+                  <span>Feb 22, 2020 </span>
+                  <p className='event-location'>TAMPA TOWN CENTER</p>
+                  <div className='attendimg-btn'>
+                    <button>I'M GOING</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,8 +115,11 @@ export default function Events() {
                 </div>
                 <div className='member-info'>
                   <h4>Organic Farmer's Market</h4>
-                  <span>Dec 25, 2021</span>
-                  <p className='event-location'>TESTING</p>
+                  <span>Feb 22, 2020 </span>
+                  <p className='event-location'>TAMPA TOWN CENTER</p>
+                  <div className='attendimg-btn'>
+                    <button>I'M GOING</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -140,18 +149,112 @@ export default function Events() {
                 </div>
                 <div className='member-info'>
                   <h4>Green Foods Expo</h4>
-                  <span>July 3, 2020</span>
-                  <p className='event-location'>TESTING</p>
+                  <span>Feb 22, 2020 </span>
+                  <p className='event-location'>TAMPA TOWN CENTER</p>
+                  <div className='attendimg-btn'>
+                    <button>I'M GOING</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div className='events-pagination'>
-        <div className='container'>
-          <button>BOOK YOUR EVENT</button>
-        </div>
+      <div className='event-form container'>
+        <form action=''>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <header className='events-booking-header'>
+                <h1>Book Your Event</h1>
+              </header>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <input
+                type='text'
+                name='name'
+                id=''
+                value='Name'
+                className='event-form-field'
+              />
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <input
+                type='email'
+                name='email'
+                id=''
+                value='Email'
+                className='event-form-field'
+              />
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-6'>
+              <input
+                type='text'
+                name='location'
+                value='Location'
+                id=''
+                className='event-form-field'
+              />
+            </div>
+            <div className='col-lg-6'>
+              <input
+                type='text'
+                name='attendees'
+                value='# of people'
+                id=''
+                className='event-form-field'
+              />
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-4'>
+              <input
+                type='date'
+                name='date'
+                id=''
+                className='event-form-field'
+              />
+            </div>
+            <div className='col-lg-4'>
+              <input
+                type='time'
+                name='time'
+                id=''
+                className='event-form-field'
+              />
+            </div>
+            <div className='col-lg-4'>
+              <input
+                type='text'
+                name='attendees'
+                value='# of people'
+                id=''
+                className='event-form-field'
+              />
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <textarea
+                name=''
+                id=''
+                cols='30'
+                rows='4'
+                className='event-form-field'
+              ></textarea>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-lg-12 event-form-button'>
+              <input type='submit' value='Send' />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   );
