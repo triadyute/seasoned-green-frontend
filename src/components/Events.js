@@ -48,6 +48,7 @@ export default function Events() {
                 <div className='member-info'>
                   <h4>Tampa Vegan Festival 2023</h4>
                   <span>Feb 22, 2020 </span>
+                  {' | '}
                   <p className='event-location'>TAMPA TOWN CENTER</p>
                   <div className='attendimg-btn'>
                     <button>I'M GOING</button>
@@ -82,6 +83,7 @@ export default function Events() {
                 <div className='member-info'>
                   <h4>Fort Lauderdale Veg-Fest</h4>
                   <span>Feb 22, 2020 </span>
+                  {' | '}
                   <p className='event-location'>TAMPA TOWN CENTER</p>
                   <div className='attendimg-btn'>
                     <button>I'M GOING</button>
@@ -116,6 +118,7 @@ export default function Events() {
                 <div className='member-info'>
                   <h4>Organic Farmer's Market</h4>
                   <span>Feb 22, 2020 </span>
+                  {' | '}
                   <p className='event-location'>TAMPA TOWN CENTER</p>
                   <div className='attendimg-btn'>
                     <button>I'M GOING</button>
@@ -150,6 +153,7 @@ export default function Events() {
                 <div className='member-info'>
                   <h4>Green Foods Expo</h4>
                   <span>Feb 22, 2020 </span>
+                  {' | '}
                   <p className='event-location'>TAMPA TOWN CENTER</p>
                   <div className='attendimg-btn'>
                     <button>I'M GOING</button>

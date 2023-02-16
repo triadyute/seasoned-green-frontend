@@ -33,34 +33,24 @@ export default function PageHeader() {
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav' fixed='top'>
             <Nav className='ml-auto'>
-              <Nav.Link>
-                <Link to='/'>Home</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to='/about' style={{ textDecoration: 'inherit' }}>
-                  About Us
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to='/menu' style={{ textDecoration: 'none' }}>
-                  Menu
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to='/recipes' style={{ textDecoration: 'none' }}>
-                  RECIPES
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to='/events' style={{ textDecoration: 'none' }}>
-                  EVENTS
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to='/contact' style={{ textDecoration: 'none' }}>
-                  CONTACT
-                </Link>
-              </Nav.Link>
+              <Link to='/' style={{ textDecoration: 'inherit' }}>
+                <Nav.Link>Home</Nav.Link>
+              </Link>
+              <Link to='/about' style={{ textDecoration: 'inherit' }}>
+                <Nav.Link>About Us</Nav.Link>
+              </Link>
+              <Link to='/menu' style={{ textDecoration: 'none' }}>
+                <Nav.Link>Menu</Nav.Link>
+              </Link>
+              <Link to='/recipes' style={{ textDecoration: 'none' }}>
+                <Nav.Link>RECIPES</Nav.Link>
+              </Link>
+              <Link to='/events' style={{ textDecoration: 'none' }}>
+                <Nav.Link>EVENTS</Nav.Link>
+              </Link>
+              <Link to='/contact' style={{ textDecoration: 'none' }}>
+                <Nav.Link>CONTACT</Nav.Link>{' '}
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
