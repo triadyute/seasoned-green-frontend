@@ -44,7 +44,18 @@ body {
   }
 
   .header .logo img {
-    max-height: 90px;
+    max-height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .header .logo {
+    text-align: center;
+  }
+
+  .header .logo img {
+    height: 80px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -116,6 +127,14 @@ background-color: #ffc107;
   } 
 }
 
+@media (max-width: 768px) {
+  .ml-auto {
+    border: solid red 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 /* HERO */
  .hero {
   display: flex;
@@ -251,7 +270,7 @@ background-color: #ffc107;
   background-attachment: fixed;
 }
 .about-header {
-  width: 100%;
+  width: auto;
   height: 25vh;
   background: linear-gradient(180deg, black, transparent), url(./assets/img/veggie-bg-2.jpg);
   /* background: url(./assets/img/veggie-bg-2.jpg); */
@@ -560,6 +579,7 @@ background-color: #ffc107;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-right: 10px;
 }
 .menu-item button {
   background-color: #b1dd00;
@@ -824,7 +844,7 @@ border: 0;
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.contact .email-form {
   box-sizing: border-box;
   background-color: #111111;  
   padding: 30px;
@@ -833,7 +853,7 @@ border: 0;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
 }
 
-.contact .php-email-form .error-message {
+.contact .email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -843,7 +863,7 @@ border: 0;
   font-weight: 600;
 }
 
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -853,7 +873,7 @@ border: 0;
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
@@ -861,7 +881,7 @@ border: 0;
   margin-bottom: 24px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -874,8 +894,8 @@ border: 0;
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border: 0;
   box-shadow: none;
   font-size: 14px;
@@ -883,20 +903,20 @@ border: 0;
   background-color: #252526;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
   border-color: #4154f1;
 }
 
-.contact .php-email-form input {
+.contact .email-form input {
   padding: 12px 17px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .email-form button[type=submit] {
   background-color: #9ccc00;
   border: 0;
   padding: 10px 30px;
@@ -906,7 +926,7 @@ border: 0;
   border-radius: 24px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .email-form button[type=submit]:hover {
   background: #5969f3;
 }
 

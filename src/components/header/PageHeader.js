@@ -25,7 +25,7 @@ export default function PageHeader() {
     >
       <Navbar expand='lg' className='navbar'>
         <Container>
-          <LinkContainer exact to={'/'}>
+          <LinkContainer to={'/'}>
             <Navbar.Brand className='logo d-flex align-items-center'>
               <img src={logo} alt='' height='200' />
             </Navbar.Brand>
@@ -34,22 +34,22 @@ export default function PageHeader() {
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav' fixed='top'>
             <Nav className='ml-auto'>
-              <LinkContainer exact to={'/'}>
+              <LinkContainer to={'/'}>
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
-              <LinkContainer exact to={'/about'}>
+              <LinkContainer to={'/about'}>
                 <Nav.Link active={false}>About</Nav.Link>
               </LinkContainer>
-              <LinkContainer exact to={'/events'}>
+              <LinkContainer to={'/events'}>
                 <Nav.Link active={false}>Events</Nav.Link>
               </LinkContainer>
-              <LinkContainer exact to={'/menu'}>
+              <LinkContainer to={'/menu'}>
                 <Nav.Link active={false}>Menus</Nav.Link>
               </LinkContainer>
-              <LinkContainer exact to={'/recipes'}>
+              <LinkContainer to={'/recipes'}>
                 <Nav.Link active={false}>Recipes</Nav.Link>
               </LinkContainer>
-              <LinkContainer exact to={'/contact'}>
+              <LinkContainer to={'/contact'}>
                 <Nav.Link active={false}>Contact</Nav.Link>
               </LinkContainer>
             </Nav>

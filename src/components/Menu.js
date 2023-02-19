@@ -90,13 +90,15 @@ export default function Menu() {
           data-aos-duration='1000'
         >
           {menuItems.map((menuItem) => (
-            <MenuItem
-              otherInfo={menuItem.otherInfo}
-              menuItemPhoto={menuItem.menuItemPhoto}
-              menuItemTitle={menuItem.menuItemTitle}
-              menuItemPrice={menuItem.menuItemPrice}
-              menuItemDescription={menuItem.menuItemDescription}
-            ></MenuItem>
+            <React.Fragment key={menuItem.menuItemTitle}>
+              <MenuItem
+                otherInfo={menuItem.otherInfo}
+                menuItemPhoto={menuItem.menuItemPhoto}
+                menuItemTitle={menuItem.menuItemTitle}
+                menuItemPrice={menuItem.menuItemPrice}
+                menuItemDescription={menuItem.menuItemDescription}
+              ></MenuItem>
+            </React.Fragment>
           ))}
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { Cart2 } from 'react-bootstrap-icons';
 export default function MenuItem(props) {
   return (
     <div className='col-lg-6'>
@@ -20,10 +21,12 @@ export default function MenuItem(props) {
           <p>{props.menuItemDescription}</p>
           <div className='menu-item-buttons'>
             <div className='add-to-cart'>
-              <button className='menu-add-to-cart'>Buy</button>
+              <button className='menu-add-to-cart'>Details</button>
             </div>
             <div className='buy'>
-              <button className='menu-add-to-cart'>Buy</button>
+              <button className='menu-add-to-cart'>
+                <Cart2 />
+              </button>
             </div>
           </div>
         </div>

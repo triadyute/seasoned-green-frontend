@@ -75,7 +75,7 @@ export default function Contact() {
               <form
                 action='forms/contact.php'
                 method='post'
-                className='php-email-form'
+                className='email-form'
               >
                 <div className='row gy-4'>
                   <div className='col-md-6'>

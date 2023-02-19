@@ -37,7 +37,7 @@ const recipes = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,eprehenderit velit',
   },
   {
-    recipeTitle: 'Vegan Pata',
+    recipeTitle: 'Vegan Pasta',
     recipeImage: recipeImage6,
     recipeDescription:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,eprehenderit velit',
@@ -76,7 +76,7 @@ export default function Recipes() {
             data-aos-duration='1000'
           >
             {recipes.map((recipe) => (
-              <div className='col-lg-4'>
+              <div className='col-lg-4' key={recipe.recipeTitle}>
                 <div className='post-box'>
                   <div className='post-img'>
                     <img
