@@ -237,6 +237,8 @@ background-color: #ffc107;
 @media (max-width: 768px) {
   .hero {
     text-align: center;
+    padding-top: 190px;
+    min-height: auto;
   }
 
   .hero h1 {
@@ -258,6 +260,12 @@ background-color: #ffc107;
   .about .content{
     margin-top: 50px;
     border-bottom: 15px solid #a4d500;
+  }
+  .about .content p {
+    line-height: 20px;
+  }
+  .about .content h3 {
+    line-height: 22px;
   }
 }
 .about {
@@ -468,133 +476,113 @@ background-color: #ffc107;
 /* MENU */
 .menu {
   min-height: 93vh;
-  padding-bottom: 40px;;
-  background-image: linear-gradient(0deg, black, transparent), url(./assets//img//hero-bg-3.jpg);
-  background-attachment: fixed;
-  background-size: contain;
-}
-.menu-section-header {
-  margin: 50px 20px 30px 20px;
-  text-align: center;
 }
 
-.menu-section-header h1 {
+.menu-section-header{
+  text-align: center;
+  margin-top: 40px;
   font-family: trashHand;
   color: #ffc107;
 }
-
 .menu-description {
+  color: #a5a5a5;
   text-align: center;
-  color: #f0f0f0;
   font-size: 20px;
-  font-weight: 200;
+  margin-bottom: 40px;
+  padding: 0 20px 0 20px;
 }
-
-.menu .menu-item {
+  .menu-item{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  min-height: 200px;
   background-color: #111111;
-  margin-top: 30px;
-  padding: 10px 30px 10px 5px;
-  border-radius: 10px;
-  border-bottom: #b1dd00 2px solid;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #a4d500;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
 }
-.menu-item-price {
-  position:absolute;
-  float: left;
-  z-index: 9999;
-  height: 150px;
-  width: 150px;
-}
-.menu-item-info-box {
-  padding: 6px;
-  background-color: #ffc107;
-  position: absolute;
-  float: inline-end;
-  font-family: bebasNeueProBold;
-  font-size: 18px;
-  color: #000000;
-}
 
-.menu-item-price-box {
-  padding: 8px 8px;
-  margin-top: 10px;
-  background-color: #ffc107;
-  font-size: 20px;
-  color: #000000;
-  font-weight: 900;
-  font-style: italic;
-  border-radius: 5px;
-  margin-left: 5px;
-  font-family: bebasNeueProBold;
-}
-.memu-item-img {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  max-height: 100%;
-}
-.menu-item-desc {
-  display: flex;
-  flex-direction: column;
+.menu-item-img {
   height: 100%;
-  justify-content: center;
-  padding-left: 10px;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  line-height: 1.2;
+  padding: 20px 0 20px 20px;
 }
-
-.menu-item-desc .menu-item-header {
+.menu-img  img{
+  height: 100%;
+}
+.menu-item-text {
+/* border: solid red 1px; */
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.menu-item-header{
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px
 }
-
-.menu-item-desc h3 {
+.menu-item-title{
   color: #ffc107;
   font-family: trashHand;
-  font-size:25px;
-}
-@media (min-width: 1024px) {
-  .menu-item-desc h3 {
-      font-size: 20px;
-    }
-    /* .menu .menu-item {
-      height: 220px;
-    } */
+  font-size: 2rem;
+  line-height: 28px;
 }
 
-.menu-item-desc p {
-  color: #8d8d8d;
-  font-family: bebasNeueProRegular;
-}
-.menu-item-buttons{
+.price-box {
+  background-color: #ffc107;
+  font-style: italic;
+  font-weight: 900;
+  border-radius: 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 10px;
+  margin-left: 10px;
+
+}
+.menu-item-description {
+  font-family: bebasNeueProRegular;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 20px;
+  color: #ffffff;
+}
+.menu-buttons {
+  display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
 }
-.menu-item button {
-  background-color: #b1dd00;
-  padding: 5px 40px;
-  border-radius: 20px;
+.menu-buttons button {
   border: 0;
-}
-
-.menu-item .add-to-cart {
-  margin-right: 20px;
-}
-
-.menu-item .add-to-cart button {
+  border-radius: 15px;
+  padding: 3px 10px;
   background-color: #ffc107;
 }
+
+.cart-button {
+  margin-left: 20px;
+}
+.cart-button button {
+ background-color: #b1dd00;
+}
+
+@media (max-width: 768px) {
+  .menu-buttons{
+    justify-content: flex-start;  
+    padding-right: 30px;
+  }
+  .menu-item-title{
+    font-size: 24px;
+  }
+  .menu-item-description {
+    padding-right: 30px;
+  }
+  .menu-item-img img{
+    border-radius: 50%;
+    border: 1px solid #b1dd00;
+   height: 100px;
+  }
+
+}
+
 
 /* EVENTS */
 .events {

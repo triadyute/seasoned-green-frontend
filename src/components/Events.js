@@ -1,4 +1,3 @@
-import React from 'react';
 import event1 from '../assets/img/event-1.jpg';
 import event2 from '../assets/img/event-2.jpg';
 import event3 from '../assets/img/event-3.jpg';

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../App.css';
 import heroImage from '../../assets/img/seasoned-bowl.png';
 import { ArrowRight } from 'react-bootstrap-icons';

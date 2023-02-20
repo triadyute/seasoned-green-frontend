@@ -1,4 +1,3 @@
-import React from 'react';
 import { GeoAlt, Telephone, Envelope, Clock } from 'react-bootstrap-icons';
 
 export default function Contact() {

@@ -1,4 +1,3 @@
-import React from 'react';
 import aboutImg from '../assets/img/about.png';
 
 export default function About() {
