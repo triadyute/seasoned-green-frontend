@@ -22,7 +22,11 @@ export default function Hero() {
               data-aos-duration='1000'
             >
               <div className='text-center text-lg-start'>
-                <Link to='/about' style={{ textDecoration: 'none' }}>
+                <Link
+                  to='/about'
+                  active={false}
+                  style={{ textDecoration: 'none' }}
+                >
                   <Button className='btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center'>
                     <span>Get Started</span>
                     <ArrowRight className='bi bi-arrow-right icon' />

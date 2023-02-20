@@ -1,17 +1,17 @@
 import React from 'react';
 import MenuItem from './menu-item/MenuItem';
-import MenuItemPhoto1 from '../assets/img/menu-item-1.png';
-import MenuItemPhoto2 from '../assets/img/menu-item-2.png';
-import MenuItemPhoto3 from '../assets/img/menu-item-3.png';
-import MenuItemPhoto4 from '../assets/img/menu-item-4.png';
-import MenuItemPhoto5 from '../assets/img/menu-item-5.png';
-import MenuItemPhoto6 from '../assets/img/menu-item-6.png';
+import MenuItemImg1 from '../assets/img/menu-item-1.png';
+import MenuItemImg2 from '../assets/img/menu-item-2.png';
+import MenuItemImg3 from '../assets/img/menu-item-3.png';
+import MenuItemImg4 from '../assets/img/menu-item-4.png';
+import MenuItemImg5 from '../assets/img/menu-item-5.png';
+import MenuItemImg6 from '../assets/img/menu-item-6.png';
 
 export default function Menu() {
   const menuItems = [
     {
       otherInfo: 'Other Info',
-      menuItemPhoto: MenuItemPhoto1,
+      menuItemImg: MenuItemImg1,
       menuItemTitle: 'Vegan Wrap',
       menuItemPrice: '20.00',
       menuItemDescription:
@@ -19,7 +19,7 @@ export default function Menu() {
     },
     {
       otherInfo: 'Other Info',
-      menuItemPhoto: MenuItemPhoto2,
+      menuItemImg: MenuItemImg2,
       menuItemTitle: 'Vegan Jamaican Patties',
       menuItemPrice: '15.00',
       menuItemDescription:
@@ -27,7 +27,7 @@ export default function Menu() {
     },
     {
       otherInfo: 'Other Info',
-      menuItemPhoto: MenuItemPhoto3,
+      menuItemImg: MenuItemImg3,
       menuItemTitle: 'Green Veggie Smoothie',
       menuItemPrice: '10.00',
       menuItemDescription:
@@ -35,7 +35,7 @@ export default function Menu() {
     },
     {
       otherInfo: 'Other Info',
-      menuItemPhoto: MenuItemPhoto4,
+      menuItemImg: MenuItemImg4,
       menuItemTitle: 'Vegan Pasta',
       menuItemPrice: '30.00',
       menuItemDescription:
@@ -43,7 +43,7 @@ export default function Menu() {
     },
     {
       otherInfo: 'Other Info',
-      menuItemPhoto: MenuItemPhoto5,
+      menuItemImg: MenuItemImg5,
       menuItemTitle: 'Vegan Tika Masala',
       menuItemPrice: '38.00',
       menuItemDescription:
@@ -51,7 +51,7 @@ export default function Menu() {
     },
     {
       otherInfo: 'Other Info',
-      menuItemPhoto: MenuItemPhoto6,
+      menuItemImg: MenuItemImg6,
       menuItemTitle: 'Vegan Chickpea Burger',
       menuItemPrice: '17.99',
       menuItemDescription:
@@ -69,7 +69,7 @@ export default function Menu() {
             data-aos='fade-up'
             data-aos-duration='1000'
           >
-            <h1>Recipes</h1>
+            <h1>Seasoned Green Delivery Menu</h1>
           </header>
           <div
             className='recipes-description'
@@ -91,7 +91,12 @@ export default function Menu() {
             data-aos-duration='1000'
           >
             {menuItems.map((menuItem) => (
-              <MenuItem />
+              <MenuItem
+                menuItemImg={menuItem.menuItemImg}
+                menuItemTitle={menuItem.menuItemTitle}
+                menuItemPrice={menuItem.menuItemPrice}
+                menuItemDescription={menuItem.menuItemDescription}
+              />
             ))}
           </div>
         </div>
